@@ -9,8 +9,9 @@ double pown(double value, uint16_t n) {
     }
     if (1 == n) {
         return value;
-    } else
+    } else {
         return value*pown(value, n-1);
+    }    
 }
 
 uint64_t fact(uint16_t n) {
